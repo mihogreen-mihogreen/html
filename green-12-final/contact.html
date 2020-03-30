@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact - The Cheese Shop</title>
+	<meta name="description" content="This page includes an event inquiry form, the store location, contact information such as email and phone number.">
+	<meta name="robots" content="noindex">
+	<meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+	<header>
+	<h1>Contact</h1>
+	<h2>Find out the ways you can contact us!</h2>
+	</header>
+	
+	<nav>
+		<hr>
+		<a href="index.html">Home</a> |
+		<a href="about.html">About</a> |
+		<a href="contact.html">Contact</a> |
+		<a href="https://www.instagram.com/?hl=en" target="_blank" title="Visit The Cheese Shop's instagram" rel="external">Instagram</a>
+		<hr>
+	</nav>
+
+<section>
+<!-- Table, Email & Phone -->
+<h3>Contact Information</h3>
+<p>For asssistance or inquiries, please contact us anytime.<br>We are open from 9 A.M.&ndash;6 P.M.</p>
+<table border="1">
+	<tr>
+		<th>Email Address</th>
+		<th>Phone Number</th>
+		<th>Contact Form</th>
+	</tr>
+	<tr>
+		<td><a href="mailto:info@thecheeseshop.com?Subject=General%20Inquiry">info&#64;thecheeseshop.com</a></td>
+		<td><a href="tel:+1-123-123-1234">+1-123-123-1234</a></td>
+		<td><a href="contact.html#form">Event Inquiry</a></td>
+	</tr>
+</table>
+</section>
+<section>
+<!-- Google Map -->
+	<h3>Store Location</h3>
+	<p>We are located in the heart of the beautiful Historic Saratoga Village.</p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25402.21365734056!2d-122.04850885!3d37.26486499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4ade107c703f%3A0xa740793930996ad!2sHistoric%20Saratoga%20Village!5e0!3m2!1sen!2sus!4v1583621392313!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+
+<br><br>
+	<p><a href="#top">Back to top</a></p>
+</section>
+<hr>
+<section>
+	<h3 id=form>Event Inquiry Form</h3>
+	<p>Ready to book or learn more about us? Send us the following information and a member of our team will reach out to you directly.<br> Please fill out both Event Information and Contact Information. We can't wait to work with you!</p>
+
+<form action="#" method="post">
+	<fieldset>
+		<legend>Event Information</legend>
+		<label for="time">Time</label>
+		<select name="time" id="time">
+			<option value="no-selection">Choose Time</option>
+			<optgroup label="Morning">
+				<option value="morning1">9:00&hyphen;10:00</option>
+				<option value="morning2">10:00&hyphen;11:00</option>
+				<option value="morning3">11:00&hyphen;12:00</option>
+			</optgroup>
+			<optgroup label="Afternoon">
+				<option value="after1">1:00&hyphen;2:00</option>
+				<option value="after2">2:00&hyphen;3:00</option>
+				<option value="after3">3:00&hyphen;4:00</option>
+			</optgroup>
+		</select>
+
+
+		<label for="date">Date</label>
+		<input type="text" name="date" id="date" size="8" maxlength="8" placeholder="MMDDYYYY" required>
+		<br><br>
+		<label for="guests">Number of Guests</label>
+		<input type="text" name="guests" id="guests" required>
+		<br><br>
+		
+		<label for="findability">How did you hear about us?</label>
+		<select name="findability" id="findability">
+			<option value="no-selection">&nbsp;</option>
+			<option value="expo">Expo</option>
+			<option value="social-media">Social Media</option>
+			<option value="wordofmouth">Word of Mouth</option>
+			<option value="other">Other</option>
+		</select>
+
+		<br><br>
+
+		Nature of Event?<br>
+		<label>
+			<input type="checkbox" name="event" value="birthday">Birthday Party<br>
+		</label>
+		<label>
+			<input type="checkbox" name="event" value="fundriser">Fundriser<br>
+		</label>
+		<label>
+			<input type="checkbox" name="event" value="holiday">Holiday Party<br>
+		</label>
+		<label>
+			<input type="checkbox" name="event" value="networking">Networking Event<br>
+		</label>
+		<label>
+			<input type="checkbox" name="event" value="other">Other<br>
+		</label><br>
+
+		<label for="allergy">Food Allergy? Please select below:</label><br>
+		<select name="allergy" size="3" multiple id="allergy">
+			<option value="eggs">Eggs</option>
+			<option value="peaunuts">Peanuts</option>
+			<option value="fish">Fish</option>
+			<option value="shellfish">Shellfish</option>
+			<option value="soy">Soy</option>
+			<option value="wheat">Wheat</option>
+		</select>
+
+		<br><br>
+
+		<label for="comments">Would you like to add any details?</label><br>
+		<textarea name="comments" id="comments" cols="45" rows="6" placeholder="Write your comment here!"></textarea>
+
+	</fieldset>
+
+	<br><br>
+
+	<fieldset>
+		<legend>Contact Information</legend>
+		<label for="fname">First Name: </label>
+		<input type="text" name="fname" id="fname" placeholder="First Name">
+		<br>
+		<label for="lname">Last Name</label>
+		<input type="text" name="lname" id="lname" placeholder="Last Name">
+		<br>
+		<label for="email">Email: </label>
+		<input type="text" name="email" id="email">
+		<br>
+		<label for="tel">Phone Number: </label>
+		<input type="text" name="tel" id="tel" placeholder="1-000-000-0000">
+		<br>
+		<label for="zip">Zip Code: </label>
+		<input type="text" name="zip" id="zip" size="5" maxlength="5">
+		<br>
+		Gender:
+		<label>
+			<input type="radio" name="gender" value="female">Female
+		</label>
+		<label>
+			<input type="radio" name="gender" value="male">Male
+		</label>
+		<label>
+			<input type="radio" name="gender" value="no-answer">No Answer
+		</label>
+	</fieldset>
+
+	<input type="submit" value="Let's plan an event"><input type="reset" value="Reset All">
+<br><br>
+</form>
+
+	<p><a href="#top">Back to top</a></p>
+</section>
+	<hr>
+<footer>
+<p>Copyright &copy; The Cheese Shop. All rights reserved.</p>
+</footer>
+</body>
+</html>

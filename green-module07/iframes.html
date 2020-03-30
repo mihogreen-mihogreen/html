@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Image Map and Iframe from Google Maps</title>
+	<meta name="description" content="This page is to demonstrate Image Map and Iframe from Google Maps.">
+	<meta name="robots" content="noindex">
+</head>
+<body>
+	<h1>Maps</h1>
+	 <h2>Applying Google Map iframe and Image Map</h2>
+	<hr>
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a> |
+<a href="gallery.html">Gallery</a> |
+<a href="iframes.html">Map</a> |
+<a href="https://www.apple.com" target="_blank" title="Visit Apple's website" rel="external">Apple</a>
+
+<!-- Google Map -->
+<hr>
+
+<p>Get more information</p>
+<iframe src="contact.html" name="myIframe" width="400" height="300"></iframe> 
+
+<h3>Google Map iframe</h3>
+<p>San Francisco Botanical Garden - 55 acres of serene gardens showcasing diverse plants from around the world & a magnolia collection.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810080.9584497405!2d-122.7703220071892!3d37.52256831445806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085876857369c5b%3A0xe894109bfda58342!2sSan%20Francisco%20Botanical%20Garden!5e0!3m2!1sen!2sus!4v1583247266174!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+
+<!-- Image Map from Image by OpenClipart-Vectors from Pixabay -->
+	<h3>Image Map</h3>
+	<p>Click on the star to get more information on how you can contact me!</p>
+<img src="images/california-2217654_640.png" alt="Map of California with a star sign on the northern California." usemap="#mymap">
+<map name="mymap">
+    <area shape="circle" href="contact.html" title="Click on the star to get Contact Information." alt="Get Contact Information." coords="129,101,45">
+
+</map>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<meta name="description" content="Survey form asking for feedback about most recent shopping experience.">
+	<meta name="robots" content="noindex">
+</head>
+<body>
+<h1>Feedback Survey</h1>
+<br>
+<h2>We Want Your Feedback!</h2>
+<hr>
+<p>As a valued member, your opinion matters to us. In order to ensure we're providing you with a great shopping experience, we invite you to fill out a short survey about your most recent contact with us. The survey should take less than five minutes to complete.
+<br><br>
+Thanks for your help!</p>
+<form action="#" method="post" enctype="multipart/form-data">
+
+  <fieldset>
+     <legend>Survey</legend>
+     1. Was the reason for your contact resolved with this interaction?<br>
+     <label>
+     <input type="radio" name="yesno" value="yes" required>Yes
+   </label><br>
+   <label>
+     <input type="radio" name="yesno" value="no">No
+     </label>
+
+     <br><br>
+
+     <label for="counts">2. How many contacts did it require for you to get your issue resolved?</label><br>
+     <select name="counts" id="counts">
+       <option value="no-selection">&nbsp;</option>
+       <option value="one">1</option>
+       <option value="two">2</option>
+       <option value="threeplus">3+</option>
+     </select>
+
+     <br><br>
+
+     3. What do you like most about the agent you spoke to?<br>
+     <label>
+      <input type="checkbox" name="agent" value="olite">Polite<br>
+     </label>
+     <label>
+       <input type="checkbox" name="agent" value="friendly">Friendly<br>
+     </label>
+     <label>
+       <input type="checkbox" name="agent" value="knowledgeable">Knowledgeable<br>
+     </label>
+     <label>
+       <input type="checkbox" name="agent" value="helpful">Helpful<br>
+     </label>
+
+       <br><br>
+
+     <label for="comments">4. Do you have any additional feedback or comments?</label><br>
+     <textarea name="comments" id="comments" cols="45" rows="10" placeholder="Write your comment here!"></textarea>
+
+     <br><br>
+
+<label for="upload">5. Upload your file here: </label>
+    <input type="file" name="upload" id="upload">
+
+    <br><br><br>
+
+  <label for="fname">First Name: </label>
+     <input type="text" name="fname" id="fname"><br>
+     <label for="lname">Last Name: </label>
+     <input type="text" name="lname" id="lname"><br>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email"><br>
+      <label for="tel">Phone Number: </label>
+      <input type="tel" name="tel" id="tel" placeholder="1-000-000-0000"><br>  
+      <label for="zip">Zip Code: </label>
+      <input type="text" name="zip" id="zip" size="5" maxlength="5" placeholder="12345"><br>
+
+  </fieldset>
+<input type="submit" value="Submit Now"><input type="reset" value="Reset Now">
+</form>
+
+<hr>
+ <p>Copyright &copy;MGreen 2020</p>     
+</body>
+</html>
